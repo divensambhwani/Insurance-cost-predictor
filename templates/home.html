@@ -13,7 +13,7 @@
 
 <body>
  <div class="login">
-	<h1>Predict Insurance Bil Amount</h1>
+	<h1>Predict Insurance Bill Amount</h1>
 
      <!-- Form to enter new data for predictions  -->
     <form action="{{ url_for('predict')}}"method="POST">
@@ -29,15 +29,10 @@
 
    <br>
    <br>
-  
    
  </div>
- {{pred}}
 
-   <br>
-   <br>
-
-<div>
+ <div>
 	age: age of primary beneficiary <br>
 
 	sex: insurance contractor gender, female, male <br>
@@ -50,6 +45,12 @@
 	smoker: Smoking <br>
 
 	region: the beneficiary's residential area in the US, northeast, southeast, southwest, northwest.<br>
-</div>
+ </div>
+ {{pred}}
+
+   <br>
+   <br>
+
+
 </body>
 </html>
