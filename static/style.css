@@ -13,7 +13,7 @@ body {
 	
 }
 
-description {
+.description {
 	color: #fff;
 	font-size: 18px;
 	text-align:left;
@@ -21,7 +21,7 @@ description {
 }
 
 
-button1 {
+.button1 {
 	
 	background-color: #000000; /* Green */
 	border: none;
