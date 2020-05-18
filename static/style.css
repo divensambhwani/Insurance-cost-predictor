@@ -13,7 +13,7 @@ body {
 	
 }
 
-.description{ 
+description{ 
 
 	color: #fff;
 	font-size: 18px;
@@ -22,7 +22,7 @@ body {
 }
 
 
-.button1{
+button1{
 
 background-color: #000000; /* Green */
   border: none;
