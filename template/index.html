@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+  <meta charset="UTF-8">
+  <title>Predict Insurance Bill</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link type="text/css" href="././css/style.css" rel="stylesheet" media="all" />
+  
+</head>
+
+
+ 
+	<h1>Predict Insurance Bill Amount</h1>
+
+     <!-- Form to enter new data for predictions  -->
+    <form action="{{ url_for('predict')}}"method="POST">
+      <input type="text" name="age" placeholder="Age" required="required" /><br>
+    	<input type="text" name="sex" placeholder="Sex" required="required" /><br>
+        <input type="text" name="bmi" placeholder="BMI" required="required" /><br>
+        <input type="text" name="children" placeholder="Children" required="required" /><br>
+        <input type="text" name="smoker" placeholder="Smoker" required="required" /><br>
+        <input type="text" name="region" placeholder="Region" required="required" /><br>
+
+	<button type="submit" class="button1">Predict</button>
+       
+
+
+
+
+    </form>
+
+   <br>
+   <br>
+   
+	 
+
+ <div class="description">
+<ul>
+
+<p>
+
+
+	<li>Age: age of primary beneficiary <br></li>
+
+	<li>Sex: insurance contractor gender, female, male <br></li>
+
+	<li>BMI: Body mass index, providing an understanding of body, weights that are relatively high or low relative to height,
+	objective index of body weight (kg / m ^ 2) using the ratio of height to weight, ideally 18.5 to 24.9 <br></li>
+
+	<li>Children: Number of children covered by health insurance / Number of dependents <br></li>
+
+	<li>Smoker: Smoking <br></li>
+
+	<li>Region: the beneficiary's residential area in the US, northeast, southeast, southwest, northwest.<br></li>
+</p>
+</ul>
+
+ </div>
+<div>
+ {{pred}}
+</div>
+
+   <br>
+   <br>
+
+
+</body>
+</html>
