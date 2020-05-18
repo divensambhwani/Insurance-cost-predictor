@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<body>
 <head>
   <meta charset="UTF-8">
   <title>Predict Insurance Bill</title>
@@ -7,12 +8,12 @@
 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}">
+<link type="text/css" href="css/style.css" rel="stylesheet" media="all" />
   
 </head>
 
-<body>
- <div class="login">
+
+ 
 	<h1>Predict Insurance Bill Amount</h1>
 
      <!-- Form to enter new data for predictions  -->
@@ -24,29 +25,44 @@
         <input type="text" name="smoker" placeholder="Smoker" required="required" /><br>
         <input type="text" name="region" placeholder="Region" required="required" /><br>
 
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+	<button type="submit" class="button1">Predict</button>
+       
+
+
+
+
     </form>
 
    <br>
    <br>
    
- </div>
+	 
 
  <div class="description">
-	age: age of primary beneficiary <br>
+<ul>
 
-	sex: insurance contractor gender, female, male <br>
+<p>
 
-	bmi: Body mass index, providing an understanding of body, weights that are relatively high or low relative to height,
-	objective index of body weight (kg / m ^ 2) using the ratio of height to weight, ideally 18.5 to 24.9 <br>
 
-	children: Number of children covered by health insurance / Number of dependents <br>
+	<li>Age: age of primary beneficiary <br></li>
 
-	smoker: Smoking <br>
+	<li>Sex: insurance contractor gender, female, male <br></li>
 
-	region: the beneficiary's residential area in the US, northeast, southeast, southwest, northwest.<br>
+	<li>BMI: Body mass index, providing an understanding of body, weights that are relatively high or low relative to height,
+	objective index of body weight (kg / m ^ 2) using the ratio of height to weight, ideally 18.5 to 24.9 <br></li>
+
+	<li>Children: Number of children covered by health insurance / Number of dependents <br></li>
+
+	<li>Smoker: Smoking <br></li>
+
+	<li>Region: the beneficiary's residential area in the US, northeast, southeast, southwest, northwest.<br></li>
+</p>
+</ul>
+
  </div>
+<div>
  {{pred}}
+</div>
 
    <br>
    <br>
