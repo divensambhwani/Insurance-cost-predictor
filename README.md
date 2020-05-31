@@ -1,3 +1,3 @@
 # Insurance-cost-predictor
 
-https://insurance-predictor-pycaret.herokuapp.com/
+https://insurance-cost-predictor.herokuapp.com/
